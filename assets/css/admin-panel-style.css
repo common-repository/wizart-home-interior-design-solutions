@@ -1,0 +1,85 @@
+.wizart-wrap form {
+    display: grid;
+    grid-gap: 20px;
+}
+.wizart-wrap label {
+    display: block;
+    margin: 5px 0;
+}
+.wizart-wrap input[type="text"] {
+    width: 100%;
+    max-width: 500px;
+    padding: 5px;
+}
+
+details > summary {
+    list-style-type: none;
+    position: relative;
+}
+details > summary::before {
+    content: '▶';
+    position: absolute;
+    left: -20px;
+}
+details[open] > summary::before {
+    content: '▼';
+}
+
+.wizart-forms-wrap {
+    margin-left: 2%;
+}
+
+.wizart-sections-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.wizart-sections-wrap img {
+    width: 30rem;
+    height: auto;
+    object-fit: contain;
+    margin-top: 0;
+}
+
+.wizart-images-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.wizart-images-wrapper .image-container {
+    flex: 1;
+    max-width: 32%;
+    box-sizing: border-box;
+    height: 15rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.wizart-images-wrapper .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.wizart-images-wrapper .hover-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    display: none;
+}
+
+.wizart-images-wrapper .image-container:hover .hover-text {
+    display: block;
+}
